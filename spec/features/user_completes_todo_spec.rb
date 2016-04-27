@@ -6,7 +6,7 @@ feature "User completes todo" do
 
     create_todo "Buy Milk"
     click_on "Mark complete"
-    expect(page).to have_css ".todos li.completed", text: "Buy Milk"
+    expect(page).to display_completed "Buy Milk"
   end
 
 end

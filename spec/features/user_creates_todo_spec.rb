@@ -6,6 +6,6 @@ feature "User creates todo" do
 
     create_todo 'Buy Milk'
 
-    expect(page).to have_css '.todos li', text: 'Buy Milk'
+    expect(page).to display_todo "Buy Milk"
   end
 end
